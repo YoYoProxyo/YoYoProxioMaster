@@ -17,17 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Leonardo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="dUP-Ga-6V4">
-                                <rect key="frame" x="129" y="135" width="342" height="330"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-cj-lO3">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Leonardo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="dUP-Ga-6V4">
+                                        <rect key="frame" x="-51" y="-36" width="342" height="330"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HIt-Zh-arZ"/>
+                                    <constraint firstItem="dUP-Ga-6V4" firstAttribute="centerY" secondItem="ufd-cj-lO3" secondAttribute="centerY" id="U1V-bN-m3q"/>
+                                    <constraint firstItem="dUP-Ga-6V4" firstAttribute="centerX" secondItem="ufd-cj-lO3" secondAttribute="centerX" id="Yjx-6I-6rb"/>
+                                    <constraint firstAttribute="height" constant="240" id="ifr-Nf-VjD"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MmH-Tb-Spy">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Leonardo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="UK4-7N-9yx">
+                                        <rect key="frame" x="-51" y="-36" width="342" height="330"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="330" id="8YC-zT-Klw"/>
+                                            <constraint firstAttribute="width" constant="342" id="afo-E3-xfQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="UK4-7N-9yx" firstAttribute="centerY" secondItem="MmH-Tb-Spy" secondAttribute="centerY" id="f8C-t6-YmM"/>
+                                    <constraint firstItem="UK4-7N-9yx" firstAttribute="centerX" secondItem="MmH-Tb-Spy" secondAttribute="centerX" id="nge-V1-07K"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.97254908084869385" green="0.96862751245498657" blue="0.90588241815567017" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.96862745098039216" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dUP-Ga-6V4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KFm-di-G3l"/>
-                            <constraint firstItem="dUP-Ga-6V4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zrH-ce-ncX"/>
+                            <constraint firstItem="ufd-cj-lO3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4kr-il-UN6"/>
+                            <constraint firstItem="MmH-Tb-Spy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="73h-n5-dbR"/>
+                            <constraint firstItem="MmH-Tb-Spy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jbX-be-hyc"/>
+                            <constraint firstItem="ufd-cj-lO3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xOY-t5-chB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alarmImage" destination="UK4-7N-9yx" id="TaM-Xs-YXI"/>
+                        <outlet property="alarmOff" destination="ufd-cj-lO3" id="sAj-Jz-b8t"/>
+                        <outlet property="alarmOn" destination="MmH-Tb-Spy" id="ylb-GZ-IUG"/>
                         <outlet property="gears" destination="dUP-Ga-6V4" id="mGU-5d-fev"/>
                     </connections>
                 </viewController>

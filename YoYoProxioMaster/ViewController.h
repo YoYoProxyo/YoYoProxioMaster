@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : int
+{
+    ESTScanTypeBluetooth,
+    ESTScanTypeBeacon
+    
+} ESTScanType;
+
 @interface ViewController : UIViewController
 
 

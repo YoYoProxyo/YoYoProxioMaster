@@ -1,0 +1,1 @@
+pod 'EstimoteSDK', '~> 3.7.0'
