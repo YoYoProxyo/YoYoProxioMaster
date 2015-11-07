@@ -14,6 +14,9 @@
 		B4CFB6F21BEE1C1300F6306D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CFB6F11BEE1C1300F6306D /* Assets.xcassets */; };
 		B4CFB6F51BEE1C1300F6306D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CFB6F31BEE1C1300F6306D /* LaunchScreen.storyboard */; };
 		B4CFB7001BEE1C1300F6306D /* YoYoProxioMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB6FF1BEE1C1300F6306D /* YoYoProxioMasterTests.m */; };
+		B4CFB70C1BEE1E9900F6306D /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB70B1BEE1E9900F6306D /* UIImage+animatedGIF.m */; };
+		B4CFB70F1BEE1F4900F6306D /* Leonardo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4CFB70D1BEE1F4900F6306D /* Leonardo.gif */; };
+		B4CFB7101BEE1F4900F6306D /* Sadi.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4CFB70E1BEE1F4900F6306D /* Sadi.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		B4CFB6FB1BEE1C1300F6306D /* YoYoProxioMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoYoProxioMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CFB6FF1BEE1C1300F6306D /* YoYoProxioMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoYoProxioMasterTests.m; sourceTree = "<group>"; };
 		B4CFB7011BEE1C1300F6306D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CFB70A1BEE1E9900F6306D /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		B4CFB70B1BEE1E9900F6306D /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		B4CFB70D1BEE1F4900F6306D /* Leonardo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Leonardo.gif; sourceTree = "<group>"; };
+		B4CFB70E1BEE1F4900F6306D /* Sadi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sadi.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +88,13 @@
 		B4CFB6E41BEE1C1300F6306D /* YoYoProxioMaster */ = {
 			isa = PBXGroup;
 			children = (
+				B4CFB70D1BEE1F4900F6306D /* Leonardo.gif */,
+				B4CFB70E1BEE1F4900F6306D /* Sadi.gif */,
 				B4CFB6E81BEE1C1300F6306D /* AppDelegate.h */,
 				B4CFB6E91BEE1C1300F6306D /* AppDelegate.m */,
 				B4CFB6EB1BEE1C1300F6306D /* ViewController.h */,
+				B4CFB70A1BEE1E9900F6306D /* UIImage+animatedGIF.h */,
+				B4CFB70B1BEE1E9900F6306D /* UIImage+animatedGIF.m */,
 				B4CFB6EC1BEE1C1300F6306D /* ViewController.m */,
 				B4CFB6EE1BEE1C1300F6306D /* Main.storyboard */,
 				B4CFB6F11BEE1C1300F6306D /* Assets.xcassets */,
@@ -191,8 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CFB70F1BEE1F4900F6306D /* Leonardo.gif in Resources */,
 				B4CFB6F51BEE1C1300F6306D /* LaunchScreen.storyboard in Resources */,
 				B4CFB6F21BEE1C1300F6306D /* Assets.xcassets in Resources */,
+				B4CFB7101BEE1F4900F6306D /* Sadi.gif in Resources */,
 				B4CFB6F01BEE1C1300F6306D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4CFB6ED1BEE1C1300F6306D /* ViewController.m in Sources */,
+				B4CFB70C1BEE1E9900F6306D /* UIImage+animatedGIF.m in Sources */,
 				B4CFB6EA1BEE1C1300F6306D /* AppDelegate.m in Sources */,
 				B4CFB6E71BEE1C1300F6306D /* main.m in Sources */,
 			);
@@ -342,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YoYoProxioMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pomelotreeapps.YoYoProxioMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YoYoProxioMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pomelotreeapps.YoYoProxioMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
