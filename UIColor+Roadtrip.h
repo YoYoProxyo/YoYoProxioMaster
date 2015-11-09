@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 Tom Ridd. All rights reserved.
 //
 
+// Roadtrip is an app I am working on separately but when you are
+// hacking hack with what you got
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

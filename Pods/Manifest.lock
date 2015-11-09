@@ -1,10 +1,18 @@
 PODS:
   - EstimoteSDK (3.7.1)
+  - libPusher (1.6.1):
+    - libPusher/Core (= 1.6.1)
+  - libPusher/Core (1.6.1):
+    - SocketRocket (= 0.4.1)
+  - SocketRocket (0.4.1)
 
 DEPENDENCIES:
   - EstimoteSDK (~> 3.7.0)
+  - libPusher (~> 1.6.1)
 
 SPEC CHECKSUMS:
   EstimoteSDK: 15d4cf50a4a1e41dcbb0c3cefd43207bed990d53
+  libPusher: 5ea58aeb83fa4ac1f5d8ef8543b1def6ace997b8
+  SocketRocket: ee0b5c34182d37bb4f1f8d628bbe737718126daa
 
 COCOAPODS: 0.38.2

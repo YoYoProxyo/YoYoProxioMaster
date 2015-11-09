@@ -9,10 +9,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>libPusher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1469924FC52F60B0068FA24EEFCB3EFC</key>
+		<key>0081870591A55C44EFAB4930303EBA94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49D46718D857D31D216C54FA565BB505</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>576897330816D7D81AD08A1C77D3E616</key>
 		<dict>
 			<key>primary</key>
 			<true/>

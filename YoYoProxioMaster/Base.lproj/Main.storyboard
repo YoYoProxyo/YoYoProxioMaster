@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -49,11 +50,20 @@
                                     <constraint firstItem="UK4-7N-9yx" firstAttribute="centerX" secondItem="MmH-Tb-Spy" secondAttribute="centerX" id="nge-V1-07K"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC1-au-nBl">
+                                <rect key="frame" x="550" y="562" width="30" height="30"/>
+                                <state key="normal" title="On"/>
+                                <connections>
+                                    <action selector="clickOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2s-Fk-qEw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.96862745098039216" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kC1-au-nBl" secondAttribute="bottom" constant="8" id="2CH-Dy-kwD"/>
                             <constraint firstItem="ufd-cj-lO3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4kr-il-UN6"/>
                             <constraint firstItem="MmH-Tb-Spy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="73h-n5-dbR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kC1-au-nBl" secondAttribute="trailing" id="gJQ-i6-tdU"/>
                             <constraint firstItem="MmH-Tb-Spy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jbX-be-hyc"/>
                             <constraint firstItem="ufd-cj-lO3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xOY-t5-chB"/>
                         </constraints>
