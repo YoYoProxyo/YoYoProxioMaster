@@ -238,9 +238,7 @@
     for (CLBeacon* beacon in beacons) {
         if ([self beaconIsActive:beacon]) {
             if (beacon.proximity == CLProximityImmediate) {
-//
-//            }
-//            if (beacon.proximity >= 0 && beacon.proximity < RADIUS) {
+
                 alarm = YES;
                 [self setAlarmState:beacon];
                 return;

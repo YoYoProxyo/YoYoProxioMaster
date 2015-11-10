@@ -1,11 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qZF-OL-WRB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="asH-AD-Rnc">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="qZF-OL-WRB" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4nU-NP-mTw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Yr8-jJ-bzR" kind="relationship" relationship="rootViewController" id="aph-9d-xz4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYr-8N-utO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NUh-By-PSx">
+            <objects>
+                <viewController id="Yr8-jJ-bzR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nUQ-Gx-fZB"/>
+                        <viewControllerLayoutGuide type="bottom" id="SE9-fp-L0m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ds-hI-ArC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoyo-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8sb-gW-x1L">
+                                <rect key="frame" x="48" y="74" width="280" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="F6D-Fl-C04"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="prox.io" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcV-Gc-8SE">
+                                <rect key="frame" x="100" y="212" width="176" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7E-HK-cb6">
+                                <rect key="frame" x="20" y="538" width="335" height="89"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-Sw-0Bf">
+                                        <rect key="frame" x="96" y="21" width="143" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="Start Alarm">
+                                            <color key="titleColor" red="0.8980392157" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="l9s-0n-mnY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="7B1-HE-G1y"/>
+                                    <constraint firstItem="QiN-Sw-0Bf" firstAttribute="centerX" secondItem="P7E-HK-cb6" secondAttribute="centerX" id="O8j-gq-UAv"/>
+                                    <constraint firstAttribute="width" constant="335" id="gEe-Jf-4HK"/>
+                                    <constraint firstItem="QiN-Sw-0Bf" firstAttribute="centerY" secondItem="P7E-HK-cb6" secondAttribute="centerY" id="iMY-S0-oA0"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell.png" translatesAutoresizingMaskIntoConstraints="NO" id="kqa-dR-bMC">
+                                <rect key="frame" x="84" y="314" width="208" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="cGj-77-Rs3"/>
+                                    <constraint firstAttribute="height" constant="172" id="yvb-rA-I7I"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8980392157" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kqa-dR-bMC" firstAttribute="top" secondItem="UcV-Gc-8SE" secondAttribute="bottom" constant="30" id="3EL-DI-GJS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="P7E-HK-cb6" secondAttribute="leading" id="3X9-02-MHi"/>
+                            <constraint firstItem="P7E-HK-cb6" firstAttribute="centerX" secondItem="6ds-hI-ArC" secondAttribute="centerX" id="Skj-pA-PYV"/>
+                            <constraint firstItem="kqa-dR-bMC" firstAttribute="centerX" secondItem="6ds-hI-ArC" secondAttribute="centerX" id="Sz0-ex-dX5"/>
+                            <constraint firstItem="8sb-gW-x1L" firstAttribute="top" secondItem="nUQ-Gx-fZB" secondAttribute="bottom" constant="54" id="i3e-9d-Bh7"/>
+                            <constraint firstItem="8sb-gW-x1L" firstAttribute="centerX" secondItem="6ds-hI-ArC" secondAttribute="centerX" id="iid-UL-4SS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P7E-HK-cb6" secondAttribute="trailing" id="nzs-Ro-DQU"/>
+                            <constraint firstItem="UcV-Gc-8SE" firstAttribute="top" secondItem="8sb-gW-x1L" secondAttribute="bottom" constant="-61" id="oEq-H8-dh2"/>
+                            <constraint firstItem="SE9-fp-L0m" firstAttribute="top" secondItem="P7E-HK-cb6" secondAttribute="bottom" constant="40" id="otY-jF-3Td"/>
+                            <constraint firstItem="UcV-Gc-8SE" firstAttribute="centerX" secondItem="8sb-gW-x1L" secondAttribute="centerX" id="tnW-r6-xDf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3X9-02-MHi"/>
+                                <exclude reference="nzs-Ro-DQU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="AAV-LT-MRS"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUt-h1-ilF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177.5" y="428.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -15,11 +114,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-cj-lO3">
-                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-cj-lO3">
+                                <rect key="frame" x="181" y="181" width="240" height="240"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Leonardo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="dUP-Ga-6V4">
                                         <rect key="frame" x="-51" y="-36" width="342" height="330"/>
@@ -51,7 +150,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC1-au-nBl">
-                                <rect key="frame" x="550" y="562" width="30" height="30"/>
+                                <rect key="frame" x="329" y="629" width="30" height="30"/>
                                 <state key="normal" title="On"/>
                                 <connections>
                                     <action selector="clickOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2s-Fk-qEw"/>
@@ -77,10 +176,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="360" y="400"/>
+            <point key="canvasLocation" x="379.5" y="428.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Leonardo.gif" width="128" height="128"/>
+        <image name="bell.png" width="640" height="640"/>
+        <image name="yoyo-logo.png" width="280" height="86"/>
     </resources>
 </document>

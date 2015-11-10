@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		55889226C1B2D406CF439DA2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE513B4E17BB87EEC21DE0 /* libPods.a */; };
+		B429466E1BF159B3009B336F /* yoyo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B429466D1BF159B3009B336F /* yoyo-logo.png */; };
+		B42946721BF16154009B336F /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = B42946711BF16154009B336F /* bell.png */; };
 		B4CFB6E71BEE1C1300F6306D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB6E61BEE1C1300F6306D /* main.m */; };
 		B4CFB6EA1BEE1C1300F6306D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB6E91BEE1C1300F6306D /* AppDelegate.m */; };
 		B4CFB6ED1BEE1C1300F6306D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB6EC1BEE1C1300F6306D /* ViewController.m */; };
@@ -35,6 +37,8 @@
 		09BE513B4E17BB87EEC21DE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		29134F51ABC27EB2A1D89FEC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		875C408464BA37BB1BA71F51 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B429466D1BF159B3009B336F /* yoyo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yoyo-logo.png"; sourceTree = "<group>"; };
+		B42946711BF16154009B336F /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		B4CFB6E21BEE1C1300F6306D /* YoYoProxioMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoYoProxioMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CFB6E61BEE1C1300F6306D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4CFB6E81BEE1C1300F6306D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,7 +121,9 @@
 				B4CFB70A1BEE1E9900F6306D /* UIImage+animatedGIF.h */,
 				B4CFB70B1BEE1E9900F6306D /* UIImage+animatedGIF.m */,
 				B4CFB6EC1BEE1C1300F6306D /* ViewController.m */,
+				B429466D1BF159B3009B336F /* yoyo-logo.png */,
 				B4CFB6EE1BEE1C1300F6306D /* Main.storyboard */,
+				B42946711BF16154009B336F /* bell.png */,
 				B4CFB6F11BEE1C1300F6306D /* Assets.xcassets */,
 				B4CFB6F31BEE1C1300F6306D /* LaunchScreen.storyboard */,
 				B4CFB6F61BEE1C1300F6306D /* Info.plist */,
@@ -233,8 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42946721BF16154009B336F /* bell.png in Resources */,
 				B4CFB70F1BEE1F4900F6306D /* Leonardo.gif in Resources */,
 				B4CFB6F51BEE1C1300F6306D /* LaunchScreen.storyboard in Resources */,
+				B429466E1BF159B3009B336F /* yoyo-logo.png in Resources */,
 				B4CFB6F21BEE1C1300F6306D /* Assets.xcassets in Resources */,
 				B4CFB7101BEE1F4900F6306D /* Sadi.gif in Resources */,
 				B4CFB6F01BEE1C1300F6306D /* Main.storyboard in Resources */,
